@@ -1,0 +1,21 @@
+{
+  "name": "testmo-mcp",
+  "version": "1.0.0",
+  "description": "Local MCP server exposing Testmo REST API tools (projects, runs, results, cases) to Claude and other MCP clients.",
+  "type": "module",
+  "bin": {
+    "testmo-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "zod": "^3.23.8"
+  }
+}
